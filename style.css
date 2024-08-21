@@ -1,0 +1,13 @@
+.my-image {
+  height: 200px;
+}
+
+@media screen and (min-width: 1200px) {
+  .detailed-content {
+    margin-left: 20rem;
+  }
+
+  .bio {
+    margin-left: 5rem;
+  }
+}
