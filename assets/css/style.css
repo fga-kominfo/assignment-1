@@ -1,0 +1,55 @@
+#experience {
+  margin-top: 200px;
+  background-color: #f6f6f8;
+  padding: 6rem 0;
+}
+
+.section-title-experience {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.experience {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.experience h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.experience-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(82, 150, 99);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem 1.3rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: #ffffff;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  resize: none;
+}
+
