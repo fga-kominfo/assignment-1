@@ -1,0 +1,16 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+}
+
+.card-body p {
+    margin-bottom: 0.5rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
