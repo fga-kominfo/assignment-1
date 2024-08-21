@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card with Nav and Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inventory</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="profile-card d-flex align-items-center">
+                    <!-- Profile Image -->
+                    <img src="foto.jpg" alt="Profile Image" class="profile-img mr-4">
+                    <!-- Profile Details -->
+                    <div>
+                        <h2 class="profile-name">Teguh Yuhono</h2>
+                        <p class="profile-role">Front End Designer</p>
+                        <div class="profile-buttons">
+                            <button class="btn btn-primary">Kontak</button>
+                            <button class="btn btn-outline-success">Resume</button>
+                        </div>
+                    </div>
+					<!-- Vertical Line -->
+                    <div class="vertical-line"></div>
+                    <!-- Profile Info -->
+                    <div class="ml-auto">
+                        <ul class="profile-info">
+                            <li><strong>Availability</strong></li>
+                            <li><strong>Usia</strong></li>
+                            <li><strong>Lokasi</strong></li>
+                            <li><strong>Pengalaman</strong></li>
+                            <li><strong>Email</strong></li>
+                        </ul>
+                    </div>
+					<div class="ml-auto">
+                        <ul class="profile-info">
+                            <li>Full Time</li>
+                            <li>29</li>
+                            <li>Bekasi</li>
+                            <li>10 Tahun</li>
+                            <li>teguhyuhono10@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="row form-container">
+            <div class="col-md-12">
+			<div class="card">
+			<div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name"><strong>Nama</strong></label>
+                        <input type="text" class="form-control" placeholder="masukkan nama anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="role"><strong>Role</strong></label>
+                        <input type="text" class="form-control" placeholder="masukkan role anda">
+                    </div>
+					<div class="form-group">
+                        <label for="role"><strong>Availability</strong></label>
+                        <input type="text" class="form-control" placeholder="masukkan Availability anda">
+                    </div>
+					<div class="form-group">
+                        <label for="role"><strong>Usia</strong></label>
+                        <input type="number" class="form-control" placeholder="masukkan Usia anda">
+                    </div>
+					<div class="form-group">
+                        <label for="role"><strong>Lokasi</strong></label>
+                        <input type="text" class="form-control" placeholder="masukkan Lokasi anda">
+                    </div>
+					<div class="form-group">
+                        <label for="role"><strong>Years Experience</strong></label>
+                        <input type="number" class="form-control" placeholder="masukkan Years Experienc anda">
+                    </div>
+					<div class="form-group">
+                        <label for="role"><strong>Email</strong></label>
+                        <input type="email" class="form-control" placeholder="masukkan Email anda">
+                    </div>
+					<div class="form-group">
+                        <input type="submit" class="form-control btn btn-md btn-success">
+                    </div>
+                    <!-- Add more form fields as needed -->
+                </form>
+				</div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
