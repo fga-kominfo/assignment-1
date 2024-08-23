@@ -10,6 +10,9 @@ header{
 }
 /* .col{
     border: red solid;
+}
+.row{
+    border: purple solid;
 } */
 .btn-nav, .btn-nav::after .btn-nav:active {
     border: none;
@@ -66,7 +69,7 @@ img{
 .btn-submit .btn-box-shadow {
     box-shadow: 2px 1px 2px #198754
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 996px) {
     .custom-border-end::after {
         display: none;
     }
