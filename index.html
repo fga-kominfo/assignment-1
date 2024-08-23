@@ -5,60 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <style>
+    <!-- <style>
         .nav-link {
             color: #000 !important; /* Mengubah warna teks menjadi hitam */
-        }
+        } -->
     </style>
 </head>
-<body>
-    <div id="nav" class="container">
-        <ul class="nav justify-content-end">
+<body class="bg-primary-subtle">
+    <div id="nav" class="container-fluid bg-light p-2 shadow">
+        <ul class="nav container justify-content-end">
             <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link text-black" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PRODUCT</a>
+              <a class="nav-link text-secondary" href="#">PRODUCT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">GALLERY</a>
+              <a class="nav-link text-secondary" href="#">GALLERY</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">BLOG</a>
+              <a class="nav-link text-secondary" href="#">BLOG</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">INVENTORY</a>
+              <a class="nav-link text-secondary" href="#">INVENTORY</a>
             </li>
         </ul>
     </div>
 
-    <div class="profil container d-flex mt-5 mb-5">
-        <!-- Kolom 1: Foto -->
-        <div class="col-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Anime_eye.svg/225px-Anime_eye.svg.png" alt="Foto saya" class="img-fluid">
+    <div class="container rounded shadow mt-5 mb-5 p-4 bg-light">
+    <div class="row">
+        <!-- Kolom: Foto -->
+        <div class="col-md-2 me-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Anime_eye.svg/225px-Anime_eye.svg.png" alt="Foto saya" class="img-fluid rounded mx-auto d-block">
         </div>
-        <!-- Kolom 2: Nama, Pekerjaan, dan Tombol -->
-        <div class="col-4 d-flex flex-column justify-content-between">
+        <!-- Kolom: Nama, Pekerjaan, dan Tombol -->
+        <div class="col-md-5 d-flex flex-column mb-4 border-end">
             <div class="label">
-                <h1>Dian Agus Prawinata</h1>
+                <h1 class="fw-bold">Nama Anda</h1>
                 <p>Front End Designer</p>
             </div>
             <div class="action">
-                <button class="btn btn-primary">Kontak</button>
-                <button class="btn btn-secondary">Resume</button>
+                <button class="btn btn-primary me-2">Kontak</button>
+                <button class="btn btn btn-outline-success">Resume</button>
             </div>
         </div>
-        <div class="vr"></div>
-        <!-- Kolom 3: Label dan Nilai -->
-        <div class="col-4 d-flex ms-2">
-            <div class="label2 me-3">
+        <!-- Kolom: Label dan Nilai -->
+        <div class="col-md-4 d-flex container">
+            <div class="label2 fw-bold">
                 <p>Availability</p>
                 <p>Usia</p>
                 <p>Lokasi</p>
                 <p>Years Experience</p>
                 <p>Email</p>
             </div>
-            <div class="value">
+            <div class="value ms-5">
                 <p>Full Time</p>
                 <p>19</p>
                 <p>Jakarta</p>
@@ -67,74 +67,55 @@
             </div>
         </div>
     </div>
-    
+</div>
 
-    <!-- <div class="profil container d-flex">
-        <div class="image col-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Anime_eye.svg/225px-Anime_eye.svg.png" alt="Foto saya">
-        </div>
-        <div class="container">
-            <div class="label">
-                <h1>Dian Agus Prawinata</h1>
-                <p>Front End Designer</p>
-            </div>
-            <div class="action">
-                <button class="kontak">Kontak</button>
-                <button class="resume">Resume</button>
-            </div>
-        </div>
-        <div class="d-flex">
-            <div class="label2">
-                <p>Availability</p>
-                <p>Usia</p>
-                <p>Lokasi</p>
-                <p>Years Experience</p>
-                <p>Email</p>
-            </div>
-            <div class="value">
-                <p>Full Time</p>
-                <p>19</p>
-                <p>Jakarta</p>
-                <p>2 Tahun</p>
-                <p>email@gmail.com</p>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="container">
-        <form action="">
+    <div class="container shadow mb-5 bg-light">
+        <form action="" class="container p-4">
             <div class="mb-3">
                 <label for="inputNama" class="form-label fw-bold">Nama</label>
-                <input type="text" class="form-control" id="inputNama">
+                <input type="text" class="form-control border border-dark" id="inputNama" placeholder="Contoh: Dian Agus Prawinata">
             </div>
             <div class="mb-3">
                 <label for="inputRole" class="form-label fw-bold">Role</label>
-                <input type="text" class="form-control" id="inputRole">
+                <input type="text" class="form-control border border-dark" id="inputRole" placeholder="Contoh: Front End Designer">
             </div>
             <div class="mb-3">
                 <label for="inputAvailability" class="form-label fw-bold">Availability</label>
-                <input type="text" class="form-control" id="inputAvailability">
+                <div class="dropdown">
+                    <button class="form-control border border-dark dropdown-toggle text-start" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pilih Availability
+                    </button>
+                    <ul class="dropdown-menu container">
+                        <li><a class="dropdown-item" href="#">Full Time</a></li>
+                        <li><a class="dropdown-item" href="#">Paruh Waktu</a></li>
+                        <li><a class="dropdown-item" href="#">Remote</a></li>
+                    </ul>
+                </div>
             </div>
+            
             <div class="mb-3">
                 <label for="inputUsia" class="form-label fw-bold">Usia</label>
-                <input type="number" class="form-control" id="inputUsia">
+                <input type="number" class="form-control border border-dark" id="inputUsia" placeholder="Contoh: 23">
             </div>
             <div class="mb-3">
                 <label for="inputLokasi" class="form-label fw-bold">Lokasi</label>
-                <input type="text" class="form-control" id="inputLokasi">
+                <input type="text" class="form-control border border-dark" id="inputLokasi" placeholder="Contoh: Jakarta">
             </div>
             <div class="mb-3">
                 <label for="inputYearsExperience" class="form-label fw-bold">Years Experience</label>
-                <input type="number" class="form-control" id="inputYearsExperience">
+                <input type="number" class="form-control border border-dark" id="inputYearsExperience" placeholder="Contoh: 2">
             </div>
             <div class="mb-3">
                 <label for="inputEmail" class="form-label fw-bold">Email</label>
-                <input type="email" class="form-control" id="inputEmail">
+                <input type="email" class="form-control border border-dark" id="inputEmail" placeholder="Contoh: email@gmail.com">
             </div>
-            <div class="d-grid gap-2">
+            <div class="d-grid gap-2 shadow mt-4">
                 <button class="btn btn-success" type="button">Submit</button>
             </div>
         </form>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 </body>
 </html>
