@@ -9,10 +9,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Assignment 1 - Prita Puja Astuti</title>
   </head>
   <body>
-    <nav class="border-bottom p-2">
+    <nav class="border-bottom p-1 shadow-nav">
       <div class="container">
         <ul class="nav justify-content-end">
           <li class="nav-item">
@@ -43,30 +44,35 @@
     </nav>
 
     <section class="bg-light p-5">
-      <div class="mt-0 p-3 bg-white card">
-        <div class="row p-3">
+      <div class="container bg-white card">
+        <div class="row p-2">
           <div class="col-md-6">
             <div class="row">
-              <div class="col-md-6 text-center mb-3">
-                <img src="logo.jpg" class="img-fluid" alt="logo" />
+              <div class="col-md-4 text-start me-0 d-flex justify-content-center">
+                <img
+                  src="logo.jpg"
+                  class="img-fluid rounded-circle"
+                  alt="logo"
+                />
               </div>
-              <div class="col-md-6 text-start">
-                <p class="fs-1 fw-bold mb-0 mt-3">Nama Anda</p>
-                <p class="mt-0">Front End Designer</p>
+              <div class="col-md-8 text-start">
+                <p class="fs-2 fw-bold mb-0 mt-3">Nama Anda</p>
+                <p class="">Front End Designer</p>
 
                 <div class="mb-4">
-                  <button type="button" class="btn btn-primary mb-2">Kontak</button>
+                  <button type="button" class="btn btn-primary mb-2">
+                    Kontak
+                  </button>
                   <button type="button" class="btn btn-outline-success mb-2">
                     Resume
                   </button>
-
                 </div>
               </div>
             </div>
           </div>
-          
-          <div class="col-md-6 border-start">
-            <table class="table table-borderless">
+
+          <div class="col-md-6 border-start mt-1">
+            <table class="table table-borderless small-text">
               <tr>
                 <td class="fw-bold">Availability</td>
                 <td>Fulltime</td>
@@ -91,12 +97,13 @@
                 <td class="fw-bold">Email</td>
                 <td>email@gmail.com</td>
               </tr>
+
             </table>
           </div>
         </div>
       </div>
 
-      <div class="py-4 px-3 mt-5 mb-5 bg-white card">
+      <div class="container py-4 px-3 mt-5 mb-5 bg-white card">
         <div class="row">
           <div class="mb-3">
             <label for="nama" class="form-label fw-bold mb-0">Nama</label>
